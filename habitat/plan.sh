@@ -11,7 +11,6 @@ pkg_bin_dirs=(
   vendor/bin
 )
 pkg_build_deps=(
-  core/glibc
   core/make
   core/gcc
   core/git
