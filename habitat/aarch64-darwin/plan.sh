@@ -1,4 +1,4 @@
-_chef_client_ruby="core/ruby3_4/3.4.2"
+_chef_client_ruby="core/ruby3_4/3.4.8"
 pkg_name="chef-infra-client"
 pkg_origin="chef"
 pkg_maintainer="The Chef Maintainers <humans@chef.io>"
@@ -35,9 +35,9 @@ pkg_deps=(
 pkg_svc_user=root
 pkg_svc_group=root
 
-# We need the following setting as the 'git commands keep cribbing if we miss 
-# some read permissions. 
-buildtime_sandbox() { 
+# We need the following setting as the 'git commands keep cribbing if we miss
+# some read permissions.
+buildtime_sandbox() {
 	echo "(version 1)
 (allow file-read-data (subpath \"/private/var\"))
 (allow file-read-data (subpath \"/dev\"))
